@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dqh-PR-Vs7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="8cp-eB-Ezh">
+            <objects>
+                <viewController id="Dqh-PR-Vs7" customClass="ViewController" customModule="cloud_animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h3q-HU-loP"/>
+                        <viewControllerLayoutGuide type="bottom" id="ESJ-YE-uEx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U6X-sh-Eet">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="22C-sQ-5Qz">
+                                <rect key="frame" x="0.0" y="496" width="1500" height="171"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mother_3_save_frog_balloon_low_poly_by_kamiwasa-d855mbm.gif" translatesAutoresizingMaskIntoConstraints="NO" id="KKJ-Sm-n3a">
+                                <rect key="frame" x="87" y="542" width="200" height="125"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KKJ-Sm-n3a" firstAttribute="leading" secondItem="KNy-Yw-9iX" secondAttribute="leading" constant="87" id="38c-9D-gs8"/>
+                            <constraint firstItem="22C-sQ-5Qz" firstAttribute="leading" secondItem="U6X-sh-Eet" secondAttribute="leading" id="8dU-No-spZ"/>
+                            <constraint firstItem="KKJ-Sm-n3a" firstAttribute="centerX" secondItem="U6X-sh-Eet" secondAttribute="centerX" id="ERt-Cz-6lK"/>
+                            <constraint firstItem="KKJ-Sm-n3a" firstAttribute="bottom" secondItem="ESJ-YE-uEx" secondAttribute="top" id="FrA-VX-LeB"/>
+                            <constraint firstItem="22C-sQ-5Qz" firstAttribute="bottom" secondItem="ESJ-YE-uEx" secondAttribute="top" id="TiG-gY-U6H"/>
+                            <constraint firstItem="22C-sQ-5Qz" firstAttribute="top" secondItem="h3q-HU-loP" secondAttribute="bottom" constant="476" id="nSr-8a-yq7"/>
+                            <constraint firstItem="KKJ-Sm-n3a" firstAttribute="top" secondItem="h3q-HU-loP" secondAttribute="bottom" constant="522" id="wL7-pp-lKO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KNy-Yw-9iX"/>
+                    </view>
+                    <connections>
+                        <outlet property="cloudsLeading" destination="8dU-No-spZ" id="Obe-a6-VBK"/>
+                        <outlet property="cloudsView" destination="22C-sQ-5Qz" id="saN-sy-0cu"/>
+                        <outlet property="img1" destination="KKJ-Sm-n3a" id="0Ji-yR-rbZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4F-dA-LyM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1474" y="30"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clouds" width="1500" height="220"/>
+        <image name="mother_3_save_frog_balloon_low_poly_by_kamiwasa-d855mbm.gif" width="480" height="360"/>
+    </resources>
+</document>
